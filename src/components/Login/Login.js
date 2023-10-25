@@ -76,32 +76,14 @@ const Login = (props) => {
 
   const emailChangeHandler = (event) => {
     dispatchEmail({ type: "USER_INPUT", val: event.target.value });
-
-    // setFormIsValid(
-    //   event.target.value.includes("@") &&
-    //     passwordState.isValid &&
-    //     collegeState.isValid
-    // );
   };
 
   const passwordChangeHandler = (event) => {
     dispatchPassword({ type: "USER_INPUT", val: event.target.value });
-
-    // setFormIsValid(
-    //   event.target.value.trim().length > 6 &&
-    //     emailState.isValid &&
-    //     collegeState.isValid
-    // );
   };
 
   const collegeNameChangeHandler = (event) => {
     dispatchCollege({ type: "USER_INPUT", val: event.target.value });
-
-    // setFormIsValid(
-    //   event.target.value.trim().length !== 0 &&
-    //     emailState.isValid &&
-    //     passwordState.isValid
-    // );
   };
 
   const validateEmailHandler = () => {
